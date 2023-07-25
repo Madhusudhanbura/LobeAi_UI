@@ -7,6 +7,7 @@
 
     <!--  Links  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -16,9 +17,8 @@
     <header>
         <nav class="navbar">
             <div class="container flex nav-header">
-
                 <div class="logo">
-                    <img src="./assets/asset 1.svg" alt="Company-Logo">
+                    <img class="thumbnail" src="./assets/asset 1.svg" alt="Company-Logo">
                 </div>
 
                 <div class="nav-content flex">
@@ -51,7 +51,8 @@
         </div>
         <div class="video-container">
             <div class="video-frame">
-                <img src="./assets/video.jpeg" alt="youtube-video">
+                <img src="./assets/video.jpeg" alt="Video Thumbnail" class="thumbnail" onclick="playVideo()">
+                
             </div>
         </div>
     </section>
@@ -69,12 +70,11 @@
     
 
 
-
     <!-- =========Footer============ -->
     <footer class="footer">
         <div class="footer-content flex">
             <div class="footer-left flex">
-                <img src="./assets/logo.svg" alt="Company-Logo">
+                <img class="foot-logo" src="./assets/logo.svg" alt="Company-Logo">
                 <p>All rights reserved.</p>
                 <p>A product by Microsoft.</p>
                 <p>© Microsoft 2021</p>
@@ -100,8 +100,19 @@
                 <a href="#">Contact</a>
                 <a href="#">Privacy</a>
             </div>
-            <div class="footer-social-links"></div>
+            <div class="footer-social-links flex">
+                <div class="footer-links">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer-links">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="footer-links">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
